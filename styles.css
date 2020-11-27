@@ -1,92 +1,176 @@
  
+html{
+	scroll-behavior: smooth;
+}
+
 body {
-    font-size: 15pt;
-    background: #705D55;
-    font-family: Arial, Helvetica, sans-serif
+  margin: 0;
+  font-size: 15pt;
+  background: #32292F;
+  font-family: Arial, Helvetica, sans-serif
 }
 
-/* sa nav button sa taas */
-#mainheader {
-  text-align: right;
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+#WebsiteLogo {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0px 20px;
+}
+
+#WebsiteLogo .iconify {
+  width: 50px;
+  height: 50px;
   padding: 10px;
-  width: 80%;
-  margin: 0 auto;
-}
-li a {
-  margin: auto;
-  margin-left: 140px;
-  text-decoration: none;
-  width: 1372px;
-  height: 70px;
-  left: 46px;
-  top: 32px;
-}
-nav a {
-  color: #F0F7F4;
-
+  color: aliceblue;
 }
 
-nav li {
-  display: inline-block;
-
-}
-.search-field{
-  float: right;
-  margin-bottom: 50px;
+#WebsiteLogo .iconify :hover {
+  color: #4bb9bd;
 }
 
-/* mga box */
-ol {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 80px;
-  padding: 24px;
-  list-style: none;
-  justify-content: center;
-}
-
-main {
-  padding-bottom: 80px;
-  
-}
-
-
-ol li {
-  padding: 24px;
-  border-radius: 35px;
-  cursor: pointer;
-  color: #000000;
-  
-  font-style: normal;
-  font-weight: 265;
-  font-size: 20px;
-  line-height: 29px;
-
-  background: #C4C4C4;
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-  
-
-  will-change: transform;
-  transition: transform 150ms ease;
-
-  width: 257px;
-  height:333px;
-  left: 81px;
-  top: 269px;
-}
-
-ol li:hover {
-  z-index: 1;
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
-}
-
-ol li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ol li img {
-  display: block;
+nav {
+  position: fixed;
   width: 100%;
-  height: auto;
+  height: 70px;
+
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 70px;
+}
+
+.nav_color {
+  background: #141013;
+  width: 100%;
+  height: 70px;
+  opacity: 0%;
+
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.nav_buttons {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+  padding: 20px;
+}
+
+.nav_buttons li {
+  display: inline;
+  padding: 40px;
+}
+
+.nav_buttons li a {
+  padding: 20px;
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 37px;
+  color: #F0F7F4;
+}
+
+.nav_buttons li :hover {
+  background-color: #4bb9bd;
+  color: #141013;
+}
+
+.main_bg_pic {
+  background-image: url("https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#StudentPortal, #TeacherPortal {
+  border: solid;
+  background-color: #C4C4C4;
+  position: absolute;
+  width: 483px;
+  height: 433px;
+  top: calc(100vh - 216px);
+
+  mix-blend-mode: normal;
+
+  border-radius: 35px;
+}
+
+#StudentPortal {
+  background-image: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  left: 10vw;
+  
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#TeacherPortal {
+  background-image: url("https://images.unsplash.com/photo-1515603403036-f3d35f75ca52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  right: 10vw;
+
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.text_container {
+  position: absolute;
+  left: 7.66%;
+  right: 7.45%;
+  top: 13.63%;
+  bottom: 9.7%;
+  
+  background: #4E3B33;
+  mix-blend-mode: multiply;
+  border-radius: 42px;
+}
+
+#TeacherPortal .text_container {
+  background: #32292F;
+}
+
+.text_container h1 {
+  position: absolute;
+  left: 5.59%;
+  right: 5.59%;
+  bottom: 53.28%;
+
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 106px;
+  text-align: center;
+  
+  color: #E2CDC4;
+}
+
+.text_container p {
+  position: absolute;
+  left: 14.91%;
+  right: 14.91%;
+  top: 35.03%;
+  
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 51px;
+  text-align: center;
+  
+  color: #B59182;
+}
+
+.text_container hr {
+  position: absolute;
+  left: 4.22%;
+  right: 4.22%;
+  top: 36.72%;
+  bottom: 63.28%;
+  
+  border: 3px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -9,67 +9,45 @@
 
   <link href="//db.onlinewebfonts.com/c/2748e4033acabd28eeb3dee4b5a2ce43?family=HelveticaNowDisplay" rel="stylesheet" type="text/css"/>
 	
+	<link rel="stylesheet" type="text/css" href="scrollbar_setup.css">
   <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 	
   <title>Untitled</title>
 </head>
 
 <body>
+  <nav onscroll="nav_onscroll">
+    <div class="nav_color"></div>
+    <div id="WebsiteLogo"><a href="#"><span class="iconify" data-icon="ion:logo-flickr" data-inline="false"></span></a></span></div>
+    <ul class="nav_buttons">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
 
-	<header id="mainheader">
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Announcement</a></li>1
-				<li><a href="#">Grades</a></li>
-				<li><a href="#">Subjects</a></li>
-			</ul>
-		</nav>
-	</header>
+  <div class="main_bg_pic"></div>
 
-
-	<!--ilalim ng nav bar-->
-  <div class="search-area">
-		<div>
-      <h1 class="home">Home</h1>
-			<input type="text" class="search-field" placeholder="Search...">
+  <div class="student_teacher">
+    <div id="StudentPortal"><a href="#">
+      <div class="text_container">
+        <h1>STUDENT</h1>
+        <hr>
+        <p>Learn in this Fast Changing New World</p>
       </div>
-    </div>
-  
-  <main>
-   <ol>
-     <li>
-       <img>
-       <h3>Technology 1</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-     </li>
-     <li>
-       <img>
-       <h3>Food Management</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-     </li>
-     <li>
-       <img>
-       <h3>Livelihood</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-     </li>
-     <li>
-       <img>
-       <h3>Technology 1</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-     </li>
-     <li>
-       <img>
-       <h3>Food Management</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-     </li>
-     <li>
-       <img>
-       <h3>Livelihood</h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-     </li>
-   </ol> 
-  </main>
+    </a></div>
+    <div id="TeacherPortal"><a href="#">
+      <div class="text_container">
+        <h1>TEACHER</h1>
+        <hr>
+        <p>New Interventions for The New World</p>
+      </div>
+    </a></div>
+  </div>
+
+  <footer style="padding: 20px 0px; width: 100%; height: 10px; background-color: black; bottom: 0%; transform: translate(0px, 300px);"></footer>
   
   <script src="function.js"></script>
 </body>
