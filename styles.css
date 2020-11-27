@@ -1,79 +1,149 @@
  
 body {
-    font-size: 15pt;
-    background: #705D55;
-    font-family: Arial, Helvetica, sans-serif
+     
+    /*font-size: 15pt;*/
+    background: #32292F;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* sa nav button sa taas */
+/* -----------sa nav button sa taas---------------------------*/
 #mainheader {
-  text-align: right;
-  padding: 10px;
-  width: 80%;
-  margin: 0 auto;
-}
+    text-align: right;
+    width: 80%;
+    background-color:teal;
+  }
+
 li a {
   margin: auto;
   margin-left: 140px;
   text-decoration: none;
-  width: 1372px;
+  /*width: 1372px;
   height: 70px;
   left: 46px;
-  top: 32px;
+  top: 32px;*/
+
+  width: 246px;
+  height: 53px;
+  left: calc(50% - 246px/2 + 53px);
+  top: calc(50% - 53px/2 - 436.5px);
+
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #F0F7F4;
 }
 nav a {
   color: #F0F7F4;
-
 }
-
 nav li {
   display: inline-block;
-
-}
-.search-field{
-  float: right;
-  margin-bottom: 50px;
 }
 
-/* mga box */
+
+/*-------------------search area ito, ilalim ng nav bar---------------------*/
+div {
+  transform: translate(120px);
+}
+h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 106px;
+  color: #F0F7F4;
+
+  text-shadow: 0px 15px 15px rgba(16, 15, 15, 0.25);
+
+  display: inline-block;
+}
+.search-field {
+  width: 469px;
+  height: 49px;
+  left: 889px;
+  top: 182px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transform: translate(590px);
+
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: left;
+
+  color: rgba(240, 247, 244, 0.75);
+}
+
+/*--------------------mga box-----------------------------------*/
+/*main {
+  padding-bottom: 80px;
+}*/
+
 ol {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 80px;
+  gap: 103px;
   padding: 24px;
   list-style: none;
   justify-content: center;
-}
-
-main {
-  padding-bottom: 80px;
-  
+  /* don't
+  width: 357px;
+  height: 433px;*/
 }
 
 
 ol li {
-  padding: 24px;
-  border-radius: 35px;
-  cursor: pointer;
-  color: #000000;
-  
+  /*---TEXT PART--- */
   font-style: normal;
   font-weight: 265;
   font-size: 20px;
   line-height: 29px;
+  color: #000000;
+  
 
+  /*--CARD/BOX PART */
+  width: 357px;
+  height:433px;
+  padding: 24px;
+  border-radius: 35px;
+  cursor: pointer;
   background: #C4C4C4;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-  
+
 
   will-change: transform;
   transition: transform 150ms ease;
-
-  width: 257px;
-  height:333px;
-  left: 81px;
-  top: 269px;
+  /*left: 81px;
+  top: 269px;*/
 }
+main ol li h3 {
+ /* width: 164px;
+  height: 32px;
+  left: calc(50% - 164px/2 - 545px);
+  top: calc(50% - 32px/2 + 16px);*/
+
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: left;
+  color: #32292F;
+}
+ol li p {
+  font-family: Helvetica Now Display;
+font-style: normal;
+font-weight: 265;
+font-size: 20px;
+line-height: 29px;
+
+color: #000000;
+}
+
 
 ol li:hover {
   z-index: 1;
@@ -88,5 +158,12 @@ ol li a {
 
 ol li img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 285px;
+  height: 162px;
+  mix-blend-mode: multiply;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
