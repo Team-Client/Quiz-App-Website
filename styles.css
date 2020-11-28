@@ -12,8 +12,7 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-li a {
-  margin: auto;
+#gap a {
   margin-left: 140px;
   text-decoration: none;
   width: 1372px;
@@ -47,6 +46,7 @@ ol {
 
 main {
   padding-bottom: 80px;
+  transform: translate(8%, 25%);
   
 }
 
@@ -90,3 +90,12 @@ ol li img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+svg {
+  position: fixed;
+}
+
+input {
+  border-radius: 5%;
+}
