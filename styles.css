@@ -1,12 +1,12 @@
- 
 body {
-  margin: auto;   
+  
   font-size: 15pt;
   font-family: Arial, Helvetica, sans-serif;
   width: 1440px;
   height: 1024px;
   /* MAIN BG */
   background: radial-gradient(50% 50% at 50% 50%, #334553 0%, #293035 100%);
+  display: block;
 }
 
 nav{ /* ITO AY NAV BAR */
@@ -18,15 +18,15 @@ nav{ /* ITO AY NAV BAR */
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 5%;
     height: 100px;
-    background-color: solid blue;
+    background-color: rgb(61, 64, 64);
 }
 nav .logo {
     float: left;
-    width: 40%;
-    height: 150%;
+    width: 40%; 
     display: flex;
     font-size: 24px;
     color: #fff;
+    padding-top: 37px;
 }
 strong {
     color: darkcyan;
@@ -44,11 +44,14 @@ nav .links{
 nav .links li{
     list-style: none;
 }
-nav .links a{
+links .active{
+  color: cyan;
+} 
+nav .links a{  
     display: block;
     padding: 1em;
-    font-size: 16px;
-    color: #fff;
+    font-size: 24px;
+    color:  #fff;
     text-decoration: none;
 }
 #nav-toggle{
@@ -56,6 +59,7 @@ nav .links a{
     top: -100px;
 }
 nav .icon-burger{
+    color: cyan;
     display: none;
     position: absolute;
     right: 5%;
@@ -116,34 +120,18 @@ nav .icon-burger .line{
 
 
 /*-------------------UNDER NAV BAR, HOME AND SEARCH AREA---------------------*/
-div h1 {
+
+ h1 {
+  margin-top: 130px;
   font-style: normal;
   font-weight: 800;
   font-size: 72px;
-  line-height: 106px;
+  line-height: 80px;
   color: #F0F7F4;
   text-shadow: 0px 15px 15px rgba(16, 15, 15, 0.25);
   display: inline-block;
 }
-div .search-field {
-  width: 469px;
-  height: 49px;
-  padding-left: 10px;
-  left: 889px;
-  top: 182px;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 15px;
-  transform: translate(730px);
-}
-div input {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: left;
-  color: rgba(240, 247, 244, 0.75);
-}
+
 
 /* -------------mga card or boxes ng Subjects--------------- */
 main div ol {
