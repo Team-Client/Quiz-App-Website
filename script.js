@@ -1,10 +1,10 @@
+//ONSCROLL Navigation Effect
 window.onscroll = function() {nav_onscroll()};
-
 function nav_onscroll() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementsByClassName("nav_color").style.opacity = "0";
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.getElementById("NavColor").style.opacity = "100";
     } else {
-        document.getElementsByClassName("nav_color").style.opacity = "100";
+        document.getElementById("NavColor").style.opacity = "0";
     }
     
 }

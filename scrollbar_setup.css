@@ -1,5 +1,5 @@
 
-/* Scroll Style*/
+/* Scrollbar Style*/
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -7,16 +7,16 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #C5D8E1;
+    background:  #293035;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #C5D8E1; 
+    background:  #293035; 
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #703770; 
+    background: #5BAEE5; 
 }
