@@ -15,12 +15,17 @@ body {
   position: absolute;
   width: 100%;
   z-index: -1;
-  fill : url(#gradient)
+  fill : url(#gradient);
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 a {
   text-decoration: none;
   color: initial;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 /* Navigation */
@@ -42,6 +47,7 @@ nav {
   position: absolute;
   background-color: #293035;
   opacity: 0;
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 /* Navigation Content Sorter */
@@ -119,7 +125,7 @@ nav .logo_container a{
 }
 
 /* Portal Sorter */
-.portal_content {
+.main_portal {
   margin: 20% 0;
   display: flex;
   justify-content: space-around;
@@ -129,13 +135,18 @@ nav .logo_container a{
 #StudentPortal {
   position: relative;
   
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 #TeacherPortal {
   position: relative;
   
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
+}
+
+#StudentPortal:hover , #TeacherPortal:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 /* Footer */

@@ -1,0 +1,129 @@
+#LoginPortals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(7, 12, 19, 0.836);
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+#LoginPortals .portal_content {
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #c4c4c4;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portal_name {
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 950;
+  font-size: 50px;
+  color: #242736;
+}
+
+.sign_up_btn {
+  margin-top: 10px;
+  align-self: flex-end;
+  width: 90px;
+  float: right;
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+form {
+  border: 3px solid #201f1f;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #2f3438;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25);
+  color: #d6d1d1;
+}
+
+.label {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 950;
+  font-size: 25px;
+}
+
+.remember {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 15px;
+}
+
+form div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_btn {
+  margin-right: 20px;
+  background-color: #334553;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px 8px 45%;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login_btn:hover, input[type=text]:hover, input[type=password]:hover {
+  opacity: 0.8;
+}
+
+.forgot {
+  margin: 0 0 0 10px;
+  font-family: Helvetica Now Display;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 15px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}

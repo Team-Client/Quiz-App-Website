@@ -8,3 +8,8 @@ function nav_onscroll() {
     }
     
 }
+
+//ONCLICK Portal Login Open and Close
+window.onclick = function(event) {
+    console.log(event)
+}
