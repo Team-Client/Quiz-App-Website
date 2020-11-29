@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0 2.5%;
+    padding-top: 5%;
+}
+
+h1 {
+    font-family: Helvetica Now Display;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    color: #F0F7F4;
+    text-shadow: 0px 15px 15px rgba(16, 15, 15, 0.25);
+    width: 226px;
+    height: 84px;
+}
+
+.header form img {
+    width: 39px;
+    height: 39px;
+    vertical-align: bottom;
+}
+
+.search-field {
+    box-sizing: border-box;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 40px;
+    background: #00000066;
+    border: none;
+    font-family: Helvetica Now Display;
+    font-style: normal;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+.search-field:hover {
+    opacity: 0.8;
+}
+
+.subjects_container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+}
+
+.subjects_container .subjects {
+    width: 337px;
+    height: 433px;
+    margin: 15px 0;
+    border-radius: 35px;
+    cursor: pointer;
+    background: #C4C4C4;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.subjects_container .subjects:nth-child(odd) {
+    background: #b9b9b9;
+}
+
+.subjects_container .subjects:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.subjects a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.subjects a h3 {
+    font-family: Helvetica Now Display;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+.subjects a img {
+    background: #3f475a;
+    width: 285px;
+    height: 162px;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+.subjects a p {
+    font-family: Helvetica Now Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}

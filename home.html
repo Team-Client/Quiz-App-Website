@@ -7,96 +7,121 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
 
-	<link href="//db.onlinewebfonts.com/c/2748e4033acabd28eeb3dee4b5a2ce43?family=HelveticaNowDisplay" rel="stylesheet" type="text/css"
-	/>
+	<link rel="icon" type="image/x-icon" href="assets/Logo_Light.ico"> 
+	<link href="//db.onlinewebfonts.com/c/2748e4033acabd28eeb3dee4b5a2ce43?family=HelveticaNowDisplay" rel="stylesheet" type="text/css"/>
 
-	<link href="home_styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="home.css" />
+  <link rel="stylesheet" type="text/css" href="main_style.css" />
+  <script type="text/javascript" src="script.js"></script>
 
 	<title>Untitled</title>
 </head>
 
-<body> 
-<!-- NAVIGATION BAR HERE -->
-  <div class="top-navigation"> 
-    <nav>
-        <input id="nav-toggle" type="checkbox">
-        <div class="logo">TWINDLE<strong>APP</strong></div>
-        <ul class="links">
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Announcement</a></li>
-            <li><a href="#">Grades</a></li>
-            <li><a href="#">Subject</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
-  </div>
-
-
-	<!-- ....UNDER NAV BAR.....-->
-	<!--<div class="below-nav">-->
-  <div class="navigation-below">
-    <h1 class="home">Home</h1>
-    <form class="search-area">
-        <img src="assets/Vector.png">
-        <input type="text" class="search-field">
-    </form>
-  </div>
-
-
-  <!--mga card or boxes ng Subjects-->
+<body onscroll="nav_onscroll()"> 
+  <!--Background Blobs-->
+  <svg class="blobs_bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#5BAEE5"/>
+        <stop offset="100%" stop-color="rgba(150, 225, 217, 0)"/>
+      </linearGradient>
+    </defs>
+    <path d="M40.4,-63.4C50.9,-64,57,-50.2,63.2,-37.2C69.5,-24.2,76.1,-12.1,72.8,-1.9C69.6,8.4,56.5,16.7,49.6,28.7C42.8,40.7,42.1,56.2,34.9,60.8C27.6,65.4,13.8,59,0.4,58.3C-13,57.6,-26,62.6,-37.1,60.2C-48.3,57.9,-57.6,48.3,-56.4,37C-55.3,25.7,-43.8,12.9,-39.7,2.4C-35.6,-8.2,-39,-16.3,-39.4,-26.4C-39.9,-36.4,-37.3,-48.3,-30.2,-49.6C-23.1,-51,-11.6,-41.9,1.7,-44.8C15,-47.8,29.9,-62.8,40.4,-63.4Z" transform="translate(160 150)" />
+    <path d="M35.7,-64.5C39.3,-53.2,30.5,-31.6,27,-18.4C23.5,-5.3,25.2,-0.7,32.4,10.3C39.6,21.4,52.3,38.8,51.4,50.5C50.5,62.1,36.1,67.8,24.6,60.5C13.2,53.3,4.7,33,-7.9,28.5C-20.4,24,-37.2,35.4,-44.1,34.3C-51,33.3,-48.1,19.9,-52.8,5.9C-57.5,-8.2,-69.8,-22.8,-68.1,-33C-66.4,-43.2,-50.7,-48.8,-37,-55.5C-23.4,-62.1,-11.7,-69.8,2.2,-73.2C16,-76.5,32.1,-75.7,35.7,-64.5Z" transform="translate(40 50)" />
+  </svg>
+  
+  <!--Navigation-->
+  <nav>
+    <div id="NavColor"></div>
+    <div>
+      <div class="logo_container"><a href=""><img id="Logo" src="assets/Main_Logo_Light.svg"></img><span id="Windle">WINDLE</span></a></div>
+      <div class="nav_buttons">
+        <a href="#">Home</a>
+        <a href="#">Announcements</a>
+        <a href="#">Grades</a>
+        <a href="#">Subjects</a>
+      </div>
+    </div>
+  </nav>
+  
   <main>
-   <div> 
-      <ol>
+    <div class="header">
+      <h1 class="title">Home</h1>
+      <form class="search-area">
+        <a href="#"><img src="assets/search_button.svg"></a>
+        <input type="text" class="search-field">
+      </form>
+    </div>
 
-        <li>
+    <!--Main Body-->
+    <div class="subjects_container">
+      <div class="subjects">
+        <a href="#">
           <img>
           <hr>
           <h3>Technology 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </li>
-
-        <li>
+        </a>
+      </div>
+      
+      <div class="subjects">
+        <a href="#">
           <img>
           <hr>
-          <h3>Food Management</h3>
+          <h3>Livelihood 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </li>
-        
-        <li>
+        </a>
+      </div>
+      
+      <div class="subjects">
+        <a href="#">
           <img>
           <hr>
-          <h3>Livelihood</h3>
+          <h3>Food Management 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </li>
-        
-        <li>
+        </a>
+      </div>
+      
+      <div class="subjects">
+        <a href="#">
           <img>
           <hr>
           <h3>Technology 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </li>
-        
-        <li>
+        </a>
+      </div>
+      
+      <div class="subjects">
+        <a href="#">
           <img>
           <hr>
-          <h3>Food Management</h3>
+          <h3>Livelihood 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </li>
-        
-        <li>
+        </a>
+      </div>
+      
+      <div class="subjects">
+        <a href="#">
           <img>
           <hr>
-          <h3>Livelihood</h3>
+          <h3>Food Management 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </li>
-      </ol> 
-   </div>
+        </a>
+      </div>
+    <div>
   </main>
-  <img src="/assets/home-blob.svg">
-  <script src="function.js"></script>
+
+  <br><br><br><br><br>
+
+  <!--Footer-->
+  <footer>
+    <div class="logo_container"><a href=""><img id="FooterLogo" src="assets/Main_Logo_Dark.svg"></img><span id="FooterWindle">WINDLE</span></a></div>
+    <div class="capt">2020 All Rights Reserved.</div>
+    <div class="footer_buttons">
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
 </body>
 </html>

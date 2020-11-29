@@ -12,8 +12,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="scrollbar_setup.css">
 	<link rel="stylesheet" type="text/css" href="login_portal.css">
-  <link rel="stylesheet" type="text/css" href="page1_styles.css" />
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="page1.css" />
+  <link rel="stylesheet" type="text/css" href="main_style.css" />
   <script type="text/javascript" src="script.js"></script>
 	
   <title>Twindle</title>
@@ -50,16 +50,16 @@
     <div class="web_motto">Dive Into Your World of Knowledge</div>
 
     <div class="main_portal">
-      <span onclick="document.getElementById('LoginPortals').style.display='flex'"><img id="StudentPortal" src="assets/Student_Person.svg"></img></span>
-      <span onclick="document.getElementById('LoginPortals').style.display='flex'"><img id="TeacherPortal" src="assets/Teacher_Person.svg"></img></span>
+      <span onclick="portal('show', 'STUDENT')"><img id="StudentPortal" src="assets/Student_Person.svg"></span>
+      <span onclick="portal('show', 'TEACHER')"><img id="TeacherPortal" src="assets/Teacher_Person.svg"></span>
   </div>
 
   <!--Login Portal-->
-  <div id="LoginPortals" class="modal">
-    <span onclick="document.getElementById('LoginPortals').style.display='none'" class="close" title="Close Modal">×</span>
+  <main id="LoginPortals" class="modal">
+    <span onclick="portal('hide', 'NONE')" class="close" title="Close Modal">×</span>
     <div class="portal_content">
-      <div class="portal_name">STUDENT OR TEACHER</div>
-      <form action="#">
+      <div class="portal_name" id="PortalName">STUDENT OR TEACHER PLACEHOLDER</div>
+      <form>
         <a href="#" class="sign_up_btn">Sign Up</a>
         <label class="label" for="gmail"><b>Gmail:</b></label>
         <input type="text" placeholder="Enter Gmail" name="gmail" required>
@@ -68,13 +68,11 @@
         <label class="remember"><input type="checkbox" checked="checked" name="remember">Remember me</label>
         <div>
           <span class="forgot"><a href="#">Forgot Password?</a></span>
-          <button type="submit" class="login_btn">Login</button>
+          <button type="submit" class="login_btn"><a href="home.html">Login</a></button>
         </div>
       </form>
     </div>
-  </div>
-
-  </div>
+  </main>
 
   <!--Footer-->
   <footer>

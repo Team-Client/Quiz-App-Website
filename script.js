@@ -8,3 +8,13 @@ function nav_onscroll() {
     }
     
 }
+var action, text;
+window.onscroll = function() {};
+function portal(action, text) {
+    if (action == 'show') {
+        document.getElementById('LoginPortals').style.display = "flex";
+        document.getElementById('PortalName').innerHTML = text;
+    } else {
+        document.getElementById('LoginPortals').style.display = "none";
+    }
+}
