@@ -1,5 +1,6 @@
 # Quiz-App-Website
 Quiz App Website for Hackathon
 
-
-Netlify Link: https://zen-neumann-625add.netlify.app/
+1. Open project
+2. Open index.html
+3. Open URL of local file 
