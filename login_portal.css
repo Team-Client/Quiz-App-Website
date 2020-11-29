@@ -88,6 +88,7 @@ form div {
 
 .login_btn {
   margin-right: 20px;
+  text-align: center;
   background-color: #334553;
   color: white;
   padding: 14px 20px;
@@ -95,7 +96,8 @@ form div {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  width: 30%;
+  width: 20%;
+  font-size: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
